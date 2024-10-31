@@ -60,6 +60,7 @@ main {
 
 /* Στυλ για άρθρα και ενότητες */
 article, section {
+    list-style-type: none;
     margin-bottom: 20px;
 }
 
@@ -74,30 +75,31 @@ h3 {
     color: #555;
 }
 
+
 /* Στυλ για παραγράφους */
 p {
     line-height: 1.6;
     margin-bottom: 10px;
 }
-
+/*
 /*Στυλ υπερσυνδέσμων */
-/* a {
+a {
     color: #007bff; /* Μπλε για τα links */
     text-decoration: none;
-} */
+}
 
-/* a:hover {
+a:hover {
     color: #0056b3;
     text-decoration: underline;
-} */
+}
 
-/* a:visited {
+a:visited {
     color: #6c757d;
-} */
+}
 
-/* a:active {
+a:active {
     color: #003865;
-} */
+}
 
 /* Στυλ για εικόνες */
 img {
@@ -106,6 +108,8 @@ img {
     border-radius: 5px; /* Καμπύλες στις άκρες */
     margin-bottom: 10px;
 }
+
+
 
 /* Float για εικόνες */
 .float-left {
@@ -134,6 +138,7 @@ nav ul {
 }
 
 nav ul li {
+    
     margin-bottom: 5px;
 }
 
