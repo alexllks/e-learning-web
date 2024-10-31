@@ -1,0 +1,126 @@
+/* Βασικό στυλ για το σώμα όλων των σελίδων */
+body {
+    background-color: #f2f2f2; /* Ανοιχτό γκρι background */
+    font-family: Arial, sans-serif; /* Γραμματοσειρά για όλο το περιεχόμενο */
+    color: #333; /* Χρώμα κειμένου */
+    margin: 0;
+    padding: 0;
+}
+
+/* Κεφαλίδα */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Στυλ για τον τίτλο της κεφαλίδας */
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Υποσέλιδο */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Κύριο περιεχόμενο */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Στυλ για άρθρα και ενότητες */
+article, section {
+    margin-bottom: 20px;
+}
+
+/* Στυλ για επικεφαλίδες */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+/* Στυλ για παραγράφους */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Στυλ υπερσυνδέσμων */
+a {
+    color: #007bff; /* Μπλε για τα links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6c757d;
+}
+
+a:active {
+    color: #003865;
+}
+
+/* Στυλ για εικόνες */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Καμπύλες στις άκρες */
+    margin-bottom: 10px;
+}
+
+/* Float για εικόνες */
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Κλάση για στυλ κειμένου */
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Στυλ για πίνακες περιεχομένων */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+}
+
+/* Στυλ κουτιών και περιθωρίων (box model) */
+.container {
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 900px;
+}
