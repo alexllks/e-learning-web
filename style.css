@@ -5,6 +5,7 @@ body {
     color: #333; /* Χρώμα κειμένου */
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 /* Κεφαλίδα */
@@ -24,7 +25,7 @@ body {
 
 /* Στυλ όταν ο χρήστης περνάει το ποντίκι πάνω από το στοιχείο */
 .test:hover {
-    color: blue; /* Αλλάζει το χρώμα του κειμένου σε μπλε */
+    color: rgb(14, 14, 235); /* Αλλάζει το χρώμα του κειμένου σε μπλε */
     cursor: pointer; /* Αλλάζει τον δείκτη του ποντικιού σε pointer */
 }
 
@@ -40,15 +41,36 @@ header {
 header h1 {
     font-size: 2em;
     margin: 0;
+    margin-bottom: 10px;
+    
 }
+
 
 /* Υποσέλιδο */
 footer {
-    background-color: #333;
+    background-color: #ffffff00;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    
 }
+
+
+
+/* Ρυθμίσεις για το footer index */
+#footer {
+    background-color: #050505; /* Σκούρο γκρι φόντο */
+    color: rgb(255, 255, 255); /* Λευκό κείμενο */
+    text-align: center; /* Κεντραρισμένο κείμενο */
+    padding: 10px 0; /* Εσωτερικό περιθώριο */
+    position: fixed; /* Τοποθέτηση στο κάτω μέρος */
+    bottom: 0; /* Κλείδωμα στο κάτω μέρος */
+    width: 100%; /* Κάλυψη όλου του πλάτους */
+    margin: 0; /* Αφαίρεση περιθωρίων */
+}
+
+
+
 
 /* Κύριο περιεχόμενο */
 main {
@@ -57,6 +79,11 @@ main {
     margin: 20px auto;
     max-width: 800px;
 }
+
+
+
+
+
 
 /* Στυλ για άρθρα και ενότητες */
 article, section {
@@ -81,6 +108,36 @@ p {
     line-height: 1.6;
     margin-bottom: 10px;
 }
+
+
+
+
+/* Κλάση για στυλ κειμένου */
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 /*Στυλ υπερσυνδέσμων */
 a {
@@ -101,12 +158,41 @@ a:active {
     color: #003865;
 }
 
+/* Στυλ για πίνακες περιεχομένων */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    
+    margin-bottom: 5px;
+}
+
+
+
 /* Στυλ για εικόνες */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 5px; /* Καμπύλες στις άκρες */
     margin-bottom: 10px;
+}
+
+#main-banner {
+    margin-bottom: 60px; /* Ρυθμίστε το κενό ανάλογα με τις ανάγκες */
+    
+    margin-top: 60px;
+    
+}
+
+/* Στυλ κουτιών και περιθωρίων (box model) */
+.container {
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 900px;
 }
 
 
@@ -120,33 +206,4 @@ img {
 .float-right {
     float: right;
     margin-left: 10px;
-}
-
-/* Κλάση για στυλ κειμένου */
-.text-center {
-    text-align: center;
-}
-
-.text-bold {
-    font-weight: bold;
-}
-
-/* Στυλ για πίνακες περιεχομένων */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    
-    margin-bottom: 5px;
-}
-
-/* Στυλ κουτιών και περιθωρίων (box model) */
-.container {
-    padding: 20px;
-    margin: 10px auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-width: 900px;
 }
