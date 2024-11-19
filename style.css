@@ -1,209 +1,340 @@
-/* Βασικό στυλ για το σώμα όλων των σελίδων */
+
 body {
-    background-color: #f2f2f2; /* Ανοιχτό γκρι background */
-    font-family: Arial, sans-serif; /* Γραμματοσειρά για όλο το περιεχόμενο */
-    color: #333; /* Χρώμα κειμένου */
     margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* Κεφαλίδα */
-
-.main_content {
-    background-color: #f0f8ff; /* Ανοιχτό μπλε φόντο */
-    padding: 15px; /* Εσωτερικό κενό γύρω από το περιεχόμενο */
-    border: 1px solid #ddd; /* Απαλό περίγραμμα */
-    border-radius: 8px; /* Καμπύλες στις γωνίες */
-    margin-bottom: 20px; /* Κενό κάτω από κάθε section */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 
 
-.test {
-    color: black;
+
+/* Γενική Διάταξη με Grid */
+.layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
 }
 
-/* Στυλ όταν ο χρήστης περνάει το ποντίκι πάνω από το στοιχείο */
-.test:hover {
-    color: rgb(14, 14, 235); /* Αλλάζει το χρώμα του κειμένου σε μπλε */
-    cursor: pointer; /* Αλλάζει τον δείκτη του ποντικιού σε pointer */
-}
-
-
-header {
+/* Header */
+.site-header {
     background-color: #333;
-    color: #fff;
-    padding: 20px;
+    color: white;
+    padding: 1em;
     text-align: center;
 }
 
-/* Στυλ για τον τίτλο της κεφαλίδας */
-header h1 {
-    font-size: 2em;
+.main-nav ul {
+    list-style: none;
+    display: flex; /* Χρήση Flexbox */
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
     margin: 0;
-    margin-bottom: 10px;
-    
 }
 
-
-/* Υποσέλιδο */
-footer {
-    background-color: #ffffff00;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    
-}
-
-
-
-/* Ρυθμίσεις για το footer index */
-#footer {
-    background-color: #050505; /* Σκούρο γκρι φόντο */
-    color: rgb(255, 255, 255); /* Λευκό κείμενο */
-    text-align: center; /* Κεντραρισμένο κείμενο */
-    padding: 10px 0; /* Εσωτερικό περιθώριο */
-    position: fixed; /* Τοποθέτηση στο κάτω μέρος */
-    bottom: 0; /* Κλείδωμα στο κάτω μέρος */
-    width: 100%; /* Κάλυψη όλου του πλάτους */
-    margin: 0; /* Αφαίρεση περιθωρίων */
-}
-
-
-
-
-/* Κύριο περιεχόμενο */
-main {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-
-
-
-
-
-/* Στυλ για άρθρα και ενότητες */
-article, section {
-    list-style-type: none;
-    margin-bottom: 20px;
-}
-
-/* Στυλ για επικεφαλίδες */
-h2 {
-    font-size: 1.8em;
-    color: #333;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #555;
-}
-
-
-/* Στυλ για παραγράφους */
-p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-
-
-
-/* Κλάση για στυλ κειμένου */
-.text-center {
-    text-align: center;
-}
-
-.text-bold {
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-/*Στυλ υπερσυνδέσμων */
-a {
-    color: #007bff; /* Μπλε για τα links */
-    text-decoration: none;
+/* Main Section */
+.site-main {
+    padding: 1.5em;
 }
 
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+/* Grid για Κατηγορίες */
+/* .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5em;
 }
 
-a:visited {
-    color: #6c757d;
+.category-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-a:active {
-    color: #003865;
+.category-item img {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
-/* Στυλ για πίνακες περιεχομένων */
-nav ul {
-    list-style-type: none;
+.category-item ul {
+    list-style: circle;
     padding: 0;
+    margin: 1em 0;
+    text-align: left;
+} 
+
+.category-item ul li {
+    margin-bottom: 0.5em;
+}  */
+
+
+/* Γενικές ρυθμίσεις για τη διάταξη των κατηγοριών */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Αυτόματη προσαρμογή */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
 }
 
-nav ul li {
-    
-    margin-bottom: 5px;
+/* Στυλ για τα αντικείμενα της κατηγορίας */
+.category-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.category-item:hover {
+    transform: scale(1.05); /* Μεγέθυνση κατά την αιώρηση */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-
-/* Στυλ για εικόνες */
-img {
+/* Εικόνες κατηγοριών */
+.category-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px; /* Καμπύλες στις άκρες */
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-#main-banner {
-    margin-bottom: 60px; /* Ρυθμίστε το κενό ανάλογα με τις ανάγκες */
-    
-    margin-top: 60px;
+/* Τίτλοι κατηγοριών */
+.category-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Λίστα θεμάτων */
+.category-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.category-item ul li {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Σύνδεσμοι */
+.category-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.category-item a:hover {
+    text-decoration: underline;
+}
+
+
+.nav-menu {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}   
+
+.footer-menu {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
     
 }
 
-/* Στυλ κουτιών και περιθωρίων (box model) */
-.container {
-    padding: 20px;
-    margin: 10px auto;
+
+
+
+/* Διάταξη των Βιβλίων */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    background-color: white;
     border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.book-item img {
+    max-width: 100%;
     border-radius: 5px;
-    max-width: 900px;
+}
+
+.book-item h4 {
+    margin: 10px 0;
+}
+
+.book-item p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.book-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.book-item a:hover {
+    text-decoration: underline;
+} 
+
+
+/* ειναι το κινουμενο θα δειξει αν θα το βαλουμε */
+
+.carousel-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    animation: slide 9s infinite;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.carousel-item p {
+    color: #555;
+    margin-top: 5px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
 }
 
 
 
-/* Float για εικόνες */
-.float-left {
-    float: left;
-    margin-right: 10px;
+
+/* banner */ 
+
+
+/* Κοντέινερ για το Banner */
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    background-color: #563d7c; /* Μωβ φόντο */
+    color: white;
+    
 }
 
-.float-right {
-    float: right;
-    margin-left: 10px;
+/* Slides */
+.banner-slide {
+    display: flex;
+    width: 300%; /* 3 slides */
+    height: 100%;
+    animation: slide 9s infinite; /* Κίνηση 15 δευτερολέπτων */
+    
 }
+
+.banner-slide {
+    flex: 0 0 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+
+
+

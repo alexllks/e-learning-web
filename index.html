@@ -6,38 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Εκπαιδευτικός Ιστότοπος</title>
     <meta name="description" content="Καλωσορίσατε στον εκπαιδευτικό μας ιστότοπο. Εδώ θα βρείτε εκπαιδευτικό υλικό και μαθήματα για βάσεις δεδομένων, προγραμματισμό και τεχνολογία λογισμικού.">
-    <style>
-        p{color: red;}
-
-
-        #footer {
-            color: rgba(231, 231, 240, 0.39);
-        }
-        
-        /* body{backround-color: #f0f0f0;} */
-    </style>
-
 </head>
 <body>
-    <header>
-        
-        <h1>Εκπαιδευτικός Ιστότοπος<img src="images/e-learning-logo.webp" width="60" height="60" alt="book1 image"></h1>
+    <div class="layout">
+        <!-- Header Section -->
+        <header class="site-header">
+            <h1>Εκπαιδευτικός Ιστότοπος</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Αρχική</a></li>
+                    <li><a href="categories.html">Κατηγορίες</a></li>
+                    <li><a href="about.html">Ποιοι Είμαστε</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <a href="index.html">Αρχική</a>
-            <a href="categories.html">Κατηγορίες</a>
-            <a href="about.html">Ποιοι Είμαστε</a>
-        </nav>
-        <img id="main-banner" src="images/e-learning.jpg" width="1650" height="95" alt="book1 image">
-    </header>
+            <div class="banner-container">
 
-    <main>
-        <h2>Καλωσορίσατε!</h2>
-        <p style= "color:red">Εξερευνήστε τον ιστότοπό μας για να ανακαλύψετε εκπαιδευτικό υλικό σε μια ποικιλία θεμάτων, όπως βάσεις δεδομένων, προγραμματισμός και τεχνολογία λογισμικού.</p>
-    </main>
+            
+                <!-- Banner Slides -->
+                <div class="banner-container">
+                    <div class="banner-slide">
+                        <p>SIGN UP AND SAVE 42% ON YOUR ORDER <a href="subscribe.html">Learn more</a></p>
+                    </div>
+                    <div class="banner-slide">
+                        <p>GET EXCLUSIVE ACCESS TO OUR LIVE PROJECTS <a href="liveprojects.html">Join now</a></p>
+                    </div>
+                    <div class="banner-slide">
+                        <p>DISCOVER NEW BOOK RELEASES <a href="releases.html">Browse now</a></p>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </header>
 
-    <footer>
-        <p id="footer">Επικοινωνία: p3200260@aueb.gr - p3160088@aueb.gr | No socials</p>
-    </footer>
+        <!-- Main Section -->
+        <main>
+            <h2>Καλωσορίσατε!</h2>
+            <p>Εξερευνήστε τον ιστότοπό μας για να ανακαλύψετε εκπαιδευτικό υλικό σε μια ποικιλία θεμάτων, όπως βάσεις δεδομένων, προγραμματισμός και τεχνολογία λογισμικού.</p>
+            
+            <!-- Carousel Section -->
+            <section class="carousel-section">
+                <h3>Πρόσφατες Κυκλοφορίες</h3>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="images/book1.jpg" alt="Συστήματα Διαχείρισης Βάσεων Δεδομένων">
+                            <h3>Συστήματα Διαχείρισης Βάσεων Δεδομένων</h3>
+                            <p>Ramakrishnan & Gehrke</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/book2.jpg" alt="Συστήματα Βάσεων Δεδομένων">
+                            <h3>Συστήματα Βάσεων Δεδομένων</h3>
+                            <p>Hector Garcia-Molina, Jeffrey D. Ullman, Jennifer Widom</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/book3.jpg" alt="Abraham Silberschatz, Henry F. Korth, και S. Sudarshan">
+                            <h3>Database System Concepts</h3>
+                            <p>Abraham Silberschatz, Henry F. Korth, και S. Sudarshan</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <p>© 2024 Εκπαιδευτικός Ιστότοπος. Όλα τα δικαιώματα διατηρούνται.</p>
+                <ul class="footer-menu">
+                    <li><a href="privacy.html">Πολιτική Απορρήτου</a></li>
+                    <li><a href="terms.html">Όροι Χρήσης</a></li>
+                    <li><a href="contact.html">Επικοινωνία</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
