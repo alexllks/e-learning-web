@@ -1,0 +1,221 @@
+/* Βασικό στυλ για το body όλων των σελίδων */
+body {
+    background-color: #f2f2f2; 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* κεφαλίδα */
+
+.main_content {
+    background-color: #f0f8ff; 
+    padding: 15px; /* 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+
+.test {
+    color: black;
+}
+
+/* Στυλ όταν ο χρήστης περνάει το ποντίκι πάνω από το στοιχείο */
+.test:hover {
+    color: rgb(14, 14, 235); /* Αλλάζει το χρώμα του κειμένου σε μπλε */
+    cursor: pointer; /* Αλλάζει τον δείκτη του ποντικιού σε pointer */
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Στυλ για τον τίτλο της κεφαλίδας */
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 10px;
+    
+}
+
+
+/* Υποσέλιδο */
+footer {
+    background-color: #ffffff00;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+
+
+/* Ρυθμίσεις για το footer index */
+#footer {
+    background-color: #050505; 
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+/* Κύριο περιεχόμενο */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+
+
+/* Στυλ για article και sections */
+article, section {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+/* Στυλ για headers */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+
+/* Στυλ για paragraphs */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Στυλ για κειμένα */
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+
+
+
+/*
+/*Στυλ για hyperlinks */
+a {
+    color: #007bff; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6c757d;
+}
+
+a:active {
+    color: #003865;
+}
+
+/* Στυλ για πίνακες περιεχομένων */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    
+    margin-bottom: 5px;
+}
+
+
+
+/* Στυλ για images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Καμπύλες στις άκρες */
+    margin-bottom: 10px;
+}
+
+#main-banner {
+    margin-bottom: 60px; /* Ρυθμίστε το κενό ανάλογα με τις ανάγκες */
+    
+    margin-top: 60px;
+    
+}
+
+/* Στυλ container */
+.container {
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 900px;
+}
+
+
+
+/* Float για images */
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 10px;
+}
+
+
+
+
+/* Στυλ για sections για about */
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Στυλ υπερσυνδέσμων */
+a {
+    color: #007bff; /* Μπλε για τα links */
+    text-decoration: none;
+}
