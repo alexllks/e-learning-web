@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα Εγγραφής Χρήστη</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validation.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <header class="site-header">
+            <h1>Εκπαιδευτικός Ιστότοπος</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Αρχική</a></li>
+                    <li><a href="categories.html">Κατηγορίες</a></li>
+                    <li><a href="about.html">Ποιοι Είμαστε</a></li>
+                    <li><a href="registration.html">Εγγραφή</a></li> <!-- Σύνδεσμος για τη φόρμα εγγραφής -->
+                </ul>
+            </nav>
+             <!-- Banner Slides -->
+             <div class="banner-container">
+                <div class="banner-slide">
+                    <p>Κάνε εγγραφή και κέρδισε ΔΩΡΑ <a href="registration.html">Μάθε περισσότερα</a></p>
+                </div>
+                <div class="banner-slide">
+                    <p>Απόκτησε αποκλειστική πρόσβαση στα βιβλία μας <a href="liveprojects.html">Πάτα εδώ</a></p>
+                </div>
+                <div class="banner-slide">
+                    <p>Ανακάλυψε τον κόσμο της πληροφορικής <a href="db-patterns.html">Πάτα εδώ</a></p>
+                </div>
+            </div>
+        </header>
+
+        <main class="site-main">
+            <h2>Φόρμα Εγγραφής</h2>
+            <form id="registration-form" novalidate>
+                <fieldset>
+                    <legend>Προσωπικά Στοιχεία</legend>
+                    <label for="fullname">Ονοματεπώνυμο:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Πλήρες όνομα" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" autocomplete="email" required>
+                    
+                    <label for="address">Διεύθυνση:</label>
+                    <input type="text" id="address" name="address" placeholder="Διεύθυνση κατοικίας" autocomplete="street-address" required>
+                    
+                    <label for="dob">Ημερομηνία Γέννησης:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="phone">Τηλέφωνο:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Στοιχεία Ταυτοποίησης</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Όνομα χρήστη" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Κωδικός πρόσβασης" required minlength="8">
+                    
+                    <label for="confirm-password">Επιβεβαίωση Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Επαναλάβετε τον κωδικό" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Επικοινωνία</legend>
+                    <label>Προτιμώμενος τρόπος επικοινωνίας:</label>
+                    <input type="checkbox" id="contact-email" name="contact-method" value="email">
+                    <label for="contact-email">Email</label>
+                    <input type="checkbox" id="contact-sms" name="contact-method" value="sms">
+                    <label for="contact-sms">SMS</label>
+                    <input type="checkbox" id="contact-viber" name="contact-method" value="viber">
+                    <label for="contact-viber">Viber</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ερωτηματολόγιο</legend>
+                    <label for="education">Μορφωτικό επίπεδο:</label>
+                    <select id="education" name="education">
+                        <option value="high-school">Λύκειο</option>
+                        <option value="bachelor">Πτυχίο</option>
+                        <option value="master">Μεταπτυχιακό</option>
+                        <option value="phd">Διδακτορικό</option>
+                    </select>
+                    
+                    <label for="occupation">Επάγγελμα:</label>
+                    <input type="text" id="occupation" name="occupation" placeholder="Επάγγελμα" required>
+                    
+                    <label for="skills">Δεξιότητες:</label>
+                    <textarea id="skills" name="skills" rows="4" placeholder="Περιγράψτε τις δεξιότητές σας"></textarea>
+                </fieldset>
+
+                <button type="submit">Υποβολή</button>
+            </form>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2024 Εκπαιδευτικός Ιστότοπος. Όλα τα δικαιώματα διατηρούνται.</p>
+        </footer>
+    </div>
+</body>
+</html>
