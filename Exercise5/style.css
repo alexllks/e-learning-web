@@ -8,7 +8,11 @@ body {
 }
 .title{
     font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    
+
 }
+
 
 
 /* Γενική Διάταξη με Grid */
@@ -26,21 +30,65 @@ body {
     padding: 0em;
     text-align: center;
 }
+/* Grid for LOGO */
 .site-logo {
-    position: absolute; /* Τοποθέτηση απόλυτη */
-    top: 23px; /* Απόσταση από την κορυφή */
-    left: 20px; /* Απόσταση από την αριστερή πλευρά */
-    width: 50px; /* Προσαρμογή μεγέθους */
-    height: auto; /* Διατήρηση αναλογιών */
+    display: grid;
+    position: absolute; 
+    top: 23px; 
+    left: 10px; 
+    width: 50px; 
+    height: auto; 
+     display: block; 
+    margin: 0 auto; 
+    
 }
-/* .site-header {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    background-color: #333;
-    color: white;
-    padding: 10px 20px; 
+
+
+/* Responsive for LOGO */
+
+@media (max-width: 480px) { /* Για κινητά */
+    .site-logo {
+        grid-template-rows: 1fr; 
+        left: 00px; 
+        width: 40px; 
+        
+    }
+    .title {
+        font-size: 1.2em; 
+    }
+    .main-nav {
+        font-size: 0.6em
+    }
+    
+}
+
+@media (min-width: 330px) and (max-width: 400px) { 
+    .site-logo {
+        grid-template-rows: 1fr; 
+        left: 00px; 
+        width: 30px; 
+    }
+
+    .title {
+        font-size: 1.6em; 
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) { /* Για tablets */
+    .site-logo {
+         border-image-width: auto;
+        max-width: 60x; 
+    }
+}
+
+/* @media (min-width: 1025px) { 
+    .site-logo {
+        max-width: 60px; 
+    }
 } */
+
+/*-------------------------------------------------------------------------------------*/
+
 
 
 .main-nav ul {
@@ -62,7 +110,7 @@ body {
 
 @media (min-width: 768px) {
     .banner-container {
-        flex-direction: row; /* Οριζόντια διάταξη για μεγαλύτερες οθόνες */
+        flex-direction: row; 
         justify-content: space-around;
     }
 }
@@ -89,11 +137,11 @@ body {
     }
 }
 /* Desktop View */
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
     .content-grid {
         grid-template-columns: repeat(3, 1fr); 
     }
-}
+} */
 
 
 @media (max-width: 600px) {
@@ -127,11 +175,11 @@ body {
 }
 
 
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
     .book-details {
         grid-template-columns: repeat(3, 1fr); 
     }
-}
+} */
 
 
 /* ----------------------------------------------------------------- */
@@ -180,7 +228,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: black;
     color: white;
     
@@ -470,7 +518,7 @@ body {
 
 
 
-/* CSS for Books */ 
+/* Style for Books */ 
 .chapters {
     margin-bottom: 20px;
 }
@@ -536,11 +584,13 @@ body {
 }
 
 
-/* FORM */ 
-
+/* FORM with one column */
 form {
-    max-width: 600px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    max-width: 600px; 
+    margin: 0 auto; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -550,40 +600,101 @@ form {
 fieldset {
     border: 1px solid #ddd;
     border-radius: 10px;
-    margin-bottom: 20px;
     padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 15px;
 }
 
 legend {
     font-weight: bold;
     color: #333;
+    margin-bottom: 10px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
+/* Input, Select, Textarea */
 input, select, textarea, button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
+/* Validation Styling */
 input:invalid {
-    border-color: red;
+    border-color: black;
+    background-color: white;
 }
 
+/* Button Styling */
 button {
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Tablet οθόνες (μεσαίο μέγεθος) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    form {
+        max-width: 80%; /* Μεγαλύτερο πλάτος για tablets */
+    }
+
+    input, select, textarea, button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+}
+
+
+/* Style for info in password */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    color: #007bff;
+    margin-left: 5px;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -125px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
