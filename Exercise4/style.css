@@ -210,13 +210,13 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .book-info ul {
-    list-style-type: none; /* Αφαιρεί τα bullet points */
-    padding: 0; /* Αφαιρεί το padding */
-    margin: 0; /* Αφαιρεί το margin */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .book-info li {
-    margin-bottom: 5px; /* Προσθέτει λίγο διάστημα μεταξύ των στοιχείων */
+    margin-bottom: 5px; 
 }
 
 
