@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
+    
 
 }
 .title{
@@ -58,6 +59,8 @@ body {
     padding: 0em;
     text-align: center;
 }
+/* ----END  General Layout using CSS Grid ---- 
+*/
 
 /* ----------------LOGO Styling (Flex & Responsive) ---------------- */
 
@@ -133,6 +136,9 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    margin-top: 20px; 
+  
+    
 }   
 
 .footer-menu {
@@ -365,6 +371,12 @@ body {
     color: #333;
     margin: 10px 0;
 }
+.content-item h4 {
+    
+   
+    color: #333;
+    margin: 10px 0;
+}
 
 /* list of each category */
 .content-item ul {
@@ -394,6 +406,17 @@ body {
     height: auto; 
     border-radius: 8px;
 }
+
+
+.red-link {
+    color: red !important;
+    text-decoration: none; /* Αφαιρεί την υπογράμμιση, αν θέλετε */
+}
+
+.red-link:hover {
+    text-decoration: underline; /* Προαιρετικό, αν θέλετε να έχει υπογράμμιση όταν περνά το ποντίκι */
+}
+
 
 
 /* Mobile View */
@@ -528,7 +551,7 @@ label {
 
 /* Input, Select, Textarea */
 input, select, textarea, button {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -655,11 +678,12 @@ button:hover {
     width: 100%;
 }
 
+
 .carousel {
     overflow: hidden;
-    width: 80%;
+    width: 90%;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 4% auto;
     position: relative;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -702,3 +726,4 @@ button:hover {
     66.66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
 }
+

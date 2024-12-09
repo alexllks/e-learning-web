@@ -12,8 +12,8 @@ body {
 
 .main_content {
     background-color: #f0f8ff; 
-    padding: 15px; /* 
-    border: 1px solid #ddd; 
+    padding: 15px; 
+    border: 1px solid black; 
     border-radius: 8px; 
     margin-bottom: 20px;
 }
@@ -49,7 +49,7 @@ header h1 {
 /* Υποσέλιδο */
 footer {
     background-color: #ffffff00;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 10px 0;
     

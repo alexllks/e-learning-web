@@ -353,6 +353,7 @@ Table of contents
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    margin-top: 20px; 
 }   
 
 .footer-menu {
@@ -370,14 +371,5 @@ Table of contents
 
 .footer-menu a:hover {
     text-decoration: underline;
-}
-
-
-.site-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    
 }
 
